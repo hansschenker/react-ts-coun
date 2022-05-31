@@ -1,5 +1,5 @@
 import React, { FC }  from "react";
-import { Profile } from "./profile/profile";
+import Counter from "./counter/counter";
 // Declaring type of props - see "Typing Component Props" for more examples
 type AppProps = {
     message: string;
@@ -9,7 +9,7 @@ type AppProps = {
  export const App = ({ message }: AppProps) => 
  <>
  <div>{message}</div>;
-  <Profile name="Hans Schenker" imageUrl="./profile.jpg" />
+ <Counter />
  </>
   
   // you can choose annotate the return type so an error is raised if you accidentally return some other type
